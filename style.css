@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+a{
+  color: inherit;
+}
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.backdrop{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: url(bckg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+.box{
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  max-height: 480px;
+  background: url(bckg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 0.2), 
+              2px 2px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;  
+  z-index: 2;
+}
+.box form{
+  height: 100%;
+  width: 100%;
+  background: rgba(29,29,28,0.171);
+  padding: 20px 40px;
+  color: #fff;
+}
+.box form h2{
+  width: 100%;
+  padding: 15px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.login-form{
+  min-height: 400px;
+  position: relative;
+}
+
+.login-form .textbox input{
+    border: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.466);
+    box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.1), 
+              1px 1px 4px rgba(0, 0, 0, 0.5);
+    outline:  none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 6px;
+} 
+.login-form .textbox input:placeholder{
+  color: #555;
+  font-size: 16px;
+}
+.login-form .textbox label{
+  width: 100%;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 5px;
+  color: #fff;
+}
+.login-form .textbox label i{
+  font-size: 14px;
+  margin-right: 5px;
+}
+.show-pass{
+    font-size: 16px;
+    position: absolute;
+    top: 33%;
+    right: 7%;
+    color: #1161ee;
+}
+
+.login-form .textbox .btn{
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 50%;
+  letter-spacing: 1px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.3s;
+  box-shadow:  -1px -1px 3px rgba(255, 255, 255, 0.1), 
+            1px 1px 3px rgba(0, 0, 0, 1);
+}
+.login-form .textbox .btn:hover{
+  background: #1161ee;
+  color: #fff;
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 
+              1px 1px 4px rgba(0, 0, 0, 1);
+}
+
+
+.login-form .checkbox input{
+  display: none;
+}
+
+.login-form .checkbox label{
+  display: flex;
+  justify-content: center;
+}
+
+
+.login-form .checkbox label span{
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+    margin-right: 5px;
+    border-radius: 1px;
+    position: relative;
+    display: inline-block;
+    background: rgba(255,255,255,.1);
+}
+.login-form .checkbox label span:before,
+.login-form .checkbox label span:after{
+    content: '';
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    transition: all .2s ease-in-out 0s;
+}
+.login-form .checkbox label span:before{
+    left: 2px;
+    width: 5px;
+    bottom: 5px;
+    transform: scale(0) rotate(0);
+}
+.login-form .checkbox label span:after{
+    top: 6px;
+    right:0;
+    transform: scale(0) rotate(0);
+}
+.login-form .checkbox input:checked + label{
+    color: #fff;
+}
+.login-form .checkbox input:checked + label span{
+    background: #1161ee;
+}
+.login-form .checkbox input:checked + label span:before{
+    transform: scale(1) rotate(45deg);
+}
+.login-form .checkbox input:checked + label span:after{
+    transform: scale(1) rotate(-45deg);
+}
+
+.hr{
+    height: 2px;
+    margin: 15px 0 15px 0 ;
+    background: rgba(255,255,255,.2);
+}
+
+
+.footer a:hover{
+    text-decoration: underline;
+    color: #1161ee;
+}
+.sign-up{
+    margin-top: 5px;
+}
+.sign-up a{
+    margin-left: 5px;
+}
+.sign-up a:hover{
+    text-decoration: underline;
+    color: #1161ee;
+}
